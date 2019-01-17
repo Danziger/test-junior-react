@@ -1,0 +1,35 @@
+.radioTabs {
+
+    &__root {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__label {
+        position: relative;
+        padding: 16px;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+        left: -50px;
+    }
+
+    &__input:checked + &__underline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid red;
+    }
+}

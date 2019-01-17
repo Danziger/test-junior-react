@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.app {
+
+    &__base {
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+
+        &.app--is-loading {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__header {
+        border-bottom: 3px solid black;
+        display: flex;
+        flex: 0 0 auto;
+    }
+
+    &__download {
+        background: transparent;
+        font-family: monospace;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px;
+        border: 0;
+        border-left: 3px solid black;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.vList {
+
+    &__item {
+        position: relative;
+        padding: 8px 8px 8px 103px ;
+        border-bottom: 3px solid black;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            background: blue;
+            color: white;
+        }
+    }
+
+    &__name {
+        margin-bottom: 8px;
+        overflow: hidden;
+        font-weight: bold;
+    }
+
+    &__attributes {
+        height: 20px;
+        overflow: hidden;
+    }
+
+    &__attr + &__attr {
+        margin-left: 16px;
+    }
+
+    &__picture {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 84px;
+
+        &:hover > .vList__img {
+            width: 50vw;
+            max-width: 580px;
+            z-index: 1;
+            box-shadow: 0 0 0 3px black;
+        }
+    }
+
+    &__img {
+        position: relative;
+        pointer-events: none;
+        width: 100%;
+    }
+}

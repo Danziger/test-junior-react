@@ -1,0 +1,58 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "rules":{
+        "react/jsx-one-expression-per-line": 0,
+        "react/forbid-prop-types": 0,
+        "react/require-default-props": 0,
+        "react/prefer-stateless-function": 0,
+        "react/destructuring-assignment": 0,
+        "react/jsx-curly-spacing": [2, { "when": "always" }],
+        "jsx-a11y/label-has-for": 0,
+        "jsx-a11y/label-has-associated-control": 0,
+        "import/no-extraneous-dependencies": [2, {
+            "devDependencies": ["**/*/test/**/*", "**/*.test.js", "**/*.spec.js"]
+        }],
+        "import/prefer-default-export": [0],
+        "import/order": [2, {
+            "groups": ["builtin", "external", "parent", "sibling", "index"],
+            "newlines-between": "always"
+        }],
+        "no-multiple-empty-lines": [2, {
+            "maxBOF": 0,
+            "max": 2,
+            "maxEOF": 1
+        }],
+        "padded-blocks": [2, {
+            "classes": "always"
+        }],
+        "max-len": [2, {
+            "code":  120,
+            "ignoreTemplateLiterals": true
+        }],
+        "lines-between-class-members": [2, "always", {
+            "exceptAfterSingleLine": true
+        }],
+        "no-unused-expressions": [2, {
+            "allowShortCircuit": true,
+            "allowTernary": true
+        }],
+        "no-debugger": 1,
+        "no-return-assign": [2, "except-parens"],
+        "no-unused-vars": 1,
+        "no-multi-assign": 0,
+        "no-plusplus": 0,
+        "no-case-declarations": 0,
+        "no-restricted-syntax": 0,
+        "indent": [0],
+        "linebreak-style": [2, "windows"],
+        "template-curly-spacing": [2, "always"]
+    },
+    "plugins": [
+        "babel"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    }
+}
