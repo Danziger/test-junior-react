@@ -1,6 +1,9 @@
 Test Junior React
 =================
 
+Simple React test for Junior roles.
+
+
 Running the Project
 -------------------
 
